@@ -32,7 +32,7 @@ pub const Char = struct {
     }
 };
 
-// Intersection e.g. A|B
+// Union e.g. A|B
 pub const Alt = struct {
     r_1: *const RegularExpression,
     r_2: *const RegularExpression,
@@ -45,7 +45,7 @@ pub const Alt = struct {
     }
 };
 
-// Represents a union e.g. AB
+// Intersection e.g. AB
 pub const Seq = struct {
     r_1: *const RegularExpression,
     r_2: *const RegularExpression,
